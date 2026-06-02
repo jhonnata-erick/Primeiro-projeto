@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body style="background-color: black; color: rgb(255, 255, 255); display: block; margin: 0 auto; text-align: center;">
+    <h1>Entre em contato comigo!</h1>
+    <form action="arquivo.php">
+        <!--NOME-->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+        
+        <br><br>
+
+        <!--EMAIL-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu Email" required>
+
+        <br><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <br><br>
+
+        <label for="animal">O que você tem como animal de estimação?</label>
+        <input type="checkbox" id="animal" name="animal" value="cachorro" required>
+        <label for="animal">Cachorro</label>
+        <input type="checkbox" id="animal" name="animal" value="gato" required>
+        <label for="animal">Gato</label>
+        <input type="checkbox" id="animal" name="animal" value="passaro" required>
+        <label for="animal">Pássaro</label>
+
+        <br><br>
+
+        <!--MENSAGEM-->
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="1" cols="50" required></textarea>
+        
+        <br><br>
+        <!--BOTÃO DE ENVIO-->
+        <input type="submit" value="Enviar">
+        <audio controls src="audio/S_pop sound.MP3" type="audio/mpeg">
+    </form>
+    <br><br>
+     <button action="" type="reset">Limpar</button>
+</body>
+</html>
